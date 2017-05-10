@@ -3,14 +3,41 @@
 <head>
   <meta charset="utf-8">
   
-  <title>lolipoop blog</title>
+  <title>实验四 Gradle 使用 | lolipoop blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lolipoop blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+
+![此处输入图片的描述][1]
+
+在项目的Gradle脚本的android领域中，添">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实验四 Gradle 使用">
+<meta property="og:url" content="http://yoursite.com/2017/04/12/实验四/index.html">
 <meta property="og:site_name" content="lolipoop blog">
+<meta property="og:description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+
+![此处输入图片的描述][1]
+
+在项目的Gradle脚本的android领域中，添">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg">
+<meta property="og:updated_time" content="2017-05-10T13:37:56.902Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lolipoop blog">
+<meta name="twitter:title" content="实验四 Gradle 使用">
+<meta name="twitter:description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+
+![此处输入图片的描述][1]
+
+在项目的Gradle脚本的android领域中，添">
+<meta name="twitter:image" content="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg">
   
     <link rel="alternate" href="/atom.xml" title="lolipoop blog" type="application/atom+xml">
   
@@ -59,78 +86,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-实验三" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/12/实验三/" class="article-date">
-  <time datetime="2017-04-12T08:02:54.000Z" itemprop="datePublished">2017-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/12/实验三/">实验三使用Github管理Android项目</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><ul>
-<li>1.掌握AndroidStudio中Git使用</li>
-<li>2.掌握Github管理项目<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2></li>
-<li><ol>
-<li>在AndroidStudio中新建项目</li>
-</ol>
-</li>
-<li><ol>
-<li>添加VCS中的Git支持</li>
-</ol>
-</li>
-<li><ol>
-<li>发布项目到Github</li>
-</ol>
-</li>
-<li><ol>
-<li>在AndroidStudio中进行修改代码、提交、新建分支、合并等操作</li>
-</ol>
-</li>
-<li><ol>
-<li>推送项目到Github</li>
-</ol>
-</li>
-<li><ol>
-<li>如有多人合作，处理pullrequest<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2></li>
-</ol>
-</li>
-<li>在Android Studio中新建项目Achromatopsia，发布项目到Github上<br><img src="http://i2.muimg.com/567571/eb8588cb7f15354a.jpg" alt="此处输入图片的描述"></li>
-<li>登录自己的Github账户，<br><img src="http://i2.muimg.com/567571/8fc56837373a6bc2.png" alt="此处输入图片的描述"></li>
-<li>打开Github，即可看到自己新建的仓库<br><img src="http://i4.buimg.com/567571/428bc8aee6516a0e.png" alt="此处输入图片的描述"></li>
-<li>多人合作，处理pull request<br><img src="http://i4.buimg.com/567571/b2eab6e1d892d0ab.png" alt="此处输入图片的描述"><h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2></li>
-<li>Setup Master Password 里面不要设置密码，这样下次上传就会比较方便。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/12/实验三/" data-id="cj2j15wiq00021cv4axg6c9ly" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-实验四" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-实验四" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/04/12/实验四/" class="article-date">
   <time datetime="2017-04-12T08:02:54.000Z" itemprop="datePublished">2017-04-12</time>
@@ -143,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/12/实验四/">实验四 Gradle 使用</a>
+    <h1 class="article-title" itemprop="name">
+      实验四 Gradle 使用
     </h1>
   
 
@@ -259,197 +215,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-实验二" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/23/实验二/" class="article-date">
-  <time datetime="2017-03-23T08:12:20.000Z" itemprop="datePublished">2017-03-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/04/12/实验三/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/23/实验二/">实验二git使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><ul>
-<li>1、掌握git使用</li>
-<li>2、掌握使用Github作为远程仓库</li>
-</ul>
-<hr>
-<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2><ul>
-<li>练习本地git操作</li>
-<li>用SSH同步本地与Github仓库</li>
-</ul>
-<hr>
-<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2><ul>
-<li>实验步骤：</li>
-<li>1、下载和安装Git和Github客户端</li>
-<li>2、在Github网页上创建一个新的仓库test2</li>
-<li>3、将test2克隆到Github客户端</li>
-<li>4、用VScode对日记进行修改</li>
-<li>5、在Github客户端上同意修改内容并同步到Github上</li>
-<li>实验结果</li>
-<li>要求以下结果截图</li>
-<li><p>1.本地操作log截图<br><img src="http://i1.piimg.com/1949/89a81d822afea62e.png" alt="此处输入图片的描述"></p>
-</li>
-<li><p>2.Github上commits截图<br><img src="http://i4.buimg.com/567571/2ac735c869eddc8f.jpg" alt="此处输入图片的描述"></p>
-</li>
-</ul>
-<hr>
-<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><ul>
-<li>当要把Github网页的仓库克隆到客户端时，点击clone and downlaod然后选择downlaod ZIP，然后再在Github客户端上克隆想要的仓库，如果直接点open in desktop会无法顺利打开。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/23/实验二/" data-id="cj2j15wiq00041cv4uryd9h1x" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-实验一" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/16/实验一/" class="article-date">
-  <time datetime="2017-03-16T08:26:17.000Z" itemprop="datePublished">2017-03-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          实验三使用Github管理Android项目
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/16/实验一/">实验一在Github上用Markdown创建技术博客</a>
-    </h1>
   
+    <a href="/2017/03/23/实验二/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实验二git使用</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><ul>
-<li>1.熟悉Github网站</li>
-<li>2.掌握Markdown语法</li>
-</ul>
-<hr>
-<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2><ul>
-<li>1.注册Github账号</li>
-<li>2.创建Gihub Pages repository</li>
-<li>3.发布第一篇博客</li>
-<li>4.学习Markdown</li>
-<li>5.利用Hexo生成博客并部署到Github</li>
-</ul>
-<hr>
-<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2><ul>
-<li>1.访问github网站，创建个人账户。</li>
-<li>2.开始创建我的第一个博客</li>
-<li>3.发布第一篇博客，和同学互相访问各自的账户</li>
-</ul>
-<p><img src="http://i1.piimg.com/4851/253f42561ac71351.jpg" alt="此处输入图片的描述"></p>
-<ul>
-<li>创建一个仓库以后，可以对别人做的修改和补充接受或拒绝，可以写一下评论</li>
-</ul>
-<ul>
-<li>4.学习Markdown：</li>
-<li>5.访问zybuluo.com,学习现成的语法规则。</li>
-<li>6.安装 Git- 2.1.2.0-32-bit.exe</li>
-<li>7.电脑 win+R 输入 cmd 回车，执行 npm install -g cnpm –registry= <a href="https://registry.npm.taobao.org命令" target="_blank" rel="external">https://registry.npm.taobao.org命令</a></li>
-<li>8.在命令窗口中直接执行 cnpm install -g hexo-cli</li>
-<li>在cmd命令窗口中，创建MD文件夹，执行语句为：mkdir MD</li>
-<li>打开MD，创建hexo文件夹：执行命令为：cd /d D:\MD,回车，执行：mkdir hexo</li>
-<li>打开hexo文件夹，执行hexo init hexo,执行语句为：cd /d D:\MD\hexo,回车，执行hexo init hexo 语句</li>
-<li>执行 cnpm install</li>
-<li>执行 hexo server</li>
-</ul>
-<p><img src="http://i1.piimg.com/4851/32d4d3d844664ad0.jpg" alt="此处输入图片的描述"></p>
-<ul>
-<li>成功搭建了自己的博客</li>
-</ul>
-<hr>
-<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><ul>
-<li>不要忘记加.github.io后缀</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/16/实验一/" data-id="cj2j15wib00001cv486uctk5d" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/13/hello-world/" class="article-date">
-  <time datetime="2017-03-13T11:56:37.942Z" itemprop="datePublished">2017-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/13/hello-world/" data-id="cj2j15wib00011cv4wc6esdee" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
