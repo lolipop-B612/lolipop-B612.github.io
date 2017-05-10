@@ -3,138 +3,57 @@
 <head>
   <meta charset="utf-8">
   
-  <title>实验四 Gradle使用 | lolipoop blog</title>
+  <title>lolipoop blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、实验目的
+  <meta name="description" content="实验四 Gradle 使用
+一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
 
-掌握Gradle的使用二、实验任务
-
-
-
-生成多个apk
-
-
-
-管理依赖库
-
-
-
-编译提速
-
-
-
-增加编译内存
-
-
-
-调用终端指令
-
-
-
-精简资源
-
-
-
-清除缓存三、实验步骤与结果
-
-
-1、生成多个apk
-1）创建渠道占位符，在AndroidManifest文件的Application节点下，创建如下所示的meda-data节点：
-
-
-2）配置Gradlew脚本
-
-
-3）在终端执行">
+在项目的Gradle脚本的android领域中，添加p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实验四 Gradle使用">
+<meta property="og:title" content="lolipoop blog">
 <meta property="og:url" content="http://yoursite.com/2017/05/10/实验四/index.html">
 <meta property="og:site_name" content="lolipoop blog">
-<meta property="og:description" content="一、实验目的
+<meta property="og:description" content="实验四 Gradle 使用
+一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
 
-掌握Gradle的使用二、实验任务
-
-
-
-生成多个apk
-
-
-
-管理依赖库
-
-
-
-编译提速
-
-
-
-增加编译内存
-
-
-
-调用终端指令
-
-
-
-精简资源
-
-
-
-清除缓存三、实验步骤与结果
-
-
-1、生成多个apk
-1）创建渠道占位符，在AndroidManifest文件的Application节点下，创建如下所示的meda-data节点：
-
-
-2）配置Gradlew脚本
-
-
-3）在终端执行">
-<meta property="og:updated_time" content="2017-05-10T13:03:44.467Z">
+在项目的Gradle脚本的android领域中，添加p">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg">
+<meta property="og:updated_time" content="2017-05-10T13:08:45.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="实验四 Gradle使用">
-<meta name="twitter:description" content="一、实验目的
+<meta name="twitter:title" content="lolipoop blog">
+<meta name="twitter:description" content="实验四 Gradle 使用
+一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
 
-掌握Gradle的使用二、实验任务
-
-
-
-生成多个apk
-
-
-
-管理依赖库
-
-
-
-编译提速
-
-
-
-增加编译内存
-
-
-
-调用终端指令
-
-
-
-精简资源
-
-
-
-清除缓存三、实验步骤与结果
-
-
-1、生成多个apk
-1）创建渠道占位符，在AndroidManifest文件的Application节点下，创建如下所示的meda-data节点：
-
-
-2）配置Gradlew脚本
-
-
-3）在终端执行">
+在项目的Gradle脚本的android领域中，添加p">
+<meta name="twitter:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
   
     <link rel="alternate" href="/atom.xml" title="lolipoop blog" type="application/atom+xml">
   
@@ -186,101 +105,101 @@
         <section id="main"><article id="post-实验四" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/05/10/实验四/" class="article-date">
-  <time datetime="2017-05-10T13:01:00.000Z" itemprop="datePublished">2017-05-10</time>
+  <time datetime="2017-05-10T13:01:00.796Z" itemprop="datePublished">2017-05-10</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      实验四 Gradle使用
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><ul>
-<li><ol>
-<li>掌握Gradle的使用<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2></li>
+        <h1 id="实验四-Gradle-使用"><a href="#实验四-Gradle-使用" class="headerlink" title="实验四 Gradle 使用"></a>实验四 Gradle 使用</h1><hr>
+<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><h3 id="1-掌握Gradle的使用"><a href="#1-掌握Gradle的使用" class="headerlink" title="1.掌握Gradle的使用"></a>1.掌握Gradle的使用</h3><hr>
+<h2 id="二、试验任务"><a href="#二、试验任务" class="headerlink" title="二、试验任务"></a>二、试验任务</h2><h3 id="1-生成多个apk"><a href="#1-生成多个apk" class="headerlink" title="1.生成多个apk"></a>1.生成多个apk</h3><h3 id="2-管理依赖库"><a href="#2-管理依赖库" class="headerlink" title="2.管理依赖库"></a>2.管理依赖库</h3><h3 id="3-编译提速"><a href="#3-编译提速" class="headerlink" title="3.编译提速"></a>3.编译提速</h3><h3 id="4-增加编译内存"><a href="#4-增加编译内存" class="headerlink" title="4.增加编译内存"></a>4.增加编译内存</h3><h3 id="5-调用终端指令"><a href="#5-调用终端指令" class="headerlink" title="5.调用终端指令"></a>5.调用终端指令</h3><h3 id="6-精简资源"><a href="#6-精简资源" class="headerlink" title="6.精简资源"></a>6.精简资源</h3><h3 id="7-清除缓存"><a href="#7-清除缓存" class="headerlink" title="7.清除缓存"></a>7.清除缓存</h3><hr>
+<h2 id="三、实验步骤和结果"><a href="#三、实验步骤和结果" class="headerlink" title="三、实验步骤和结果"></a>三、实验步骤和结果</h2><h3 id="1-生成多个apk-1"><a href="#1-生成多个apk-1" class="headerlink" title="1.生成多个apk"></a>1.生成多个apk</h3><ol>
+<li><p>首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点</p>
+<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg" alt="1"></p>
+</li>
+<li><p>在项目的Gradle脚本的android领域中，添加productFlavors领域，并增加定义的渠道名。同时，使用manifestPlaceholders指定要替换渠道占位符的值，代码如下图</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg" alt="2"></p>
+</li>
+<li><p>在终端执行gradlew build命令开始创建，创建完成后，可在项目的/appild/outputs/apk中查看生成的渠道包，生成结果如下图所示：</p>
+<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg" alt="3"></p>
+</li>
 </ol>
+<h3 id="2-管理依赖库-1"><a href="#2-管理依赖库-1" class="headerlink" title="2.管理依赖库"></a>2.管理依赖库</h3><ol>
+<li><p>利用Gradle的通知机制</p>
+<p> 当项目依赖的库项目有更新之后，Gradle并不会立即通知主项目，但Gradle会给出一种通知机制，即利用Gradle的检查周期进行check，代码如下图</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg" alt="12"></p>
+<p> 这样就可以设置Gradle依赖的缓存时间。</p>
 </li>
-<li><ol>
-<li>生成多个apk</li>
+<li><p>同时Gradle还提供了在依赖传递中的强制刷新配置。例如，在一个简单的compile语句中，代码如下如所示</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg" alt="13"></p>
+<p> 如果增加一个属性transitive并让其值为true，则代表会强制刷新远程库，避免远程库更新后本地为刷新的问题。</p>
+</li>
+<li><p>利用Gradle的依赖检查</p>
+<p> 上面一种方式利用了Gradle的被动通知机制，但是这种方式始终需要开发者进行check，只能算是一种被动的通知机制。</p>
+<p> 实际上，利用gradle提供的task可以很方便地解决依赖问题，用到的gradle指令就是gradlew androidDependencies，使用后效果如下如所示</p>
+<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg" alt="14"></p>
+</li>
+<li><p>Gradle依赖统一管理</p>
+<p> 利用Gradle全局变量实现这一管理，在根目录的build.gradle脚本中配置如下所示的代码。</p>
+<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg" alt="15"></p>
+<p> 在全局Gradle脚本中，制订了android和dependencies两个列表，并在其中配置了同意的参数和对应的值。这样每个module中，可以通过代码使用全局的依赖配置，代码如下</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg" alt="17"></p>
+<p> <img src="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg" alt="16"></p>
+</li>
 </ol>
+<h3 id="3-编译提速-1"><a href="#3-编译提速-1" class="headerlink" title="3.编译提速"></a>3.编译提速</h3><ol>
+<li><p>Gradle在编译时会执行大量的Task，同时生成很多中间文件。所以我们可以通过在gradle.properties文件中增加如下图代码</p>
+<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg" alt="4"></p>
 </li>
-<li><ol>
-<li>管理依赖库</li>
+<li><p>上诉代码表示开启Gradle的多线程和多核心支持，以此提高编译速度</p>
+</li>
 </ol>
+<h3 id="4-增加编译内存-1"><a href="#4-增加编译内存-1" class="headerlink" title="4.增加编译内存"></a>4.增加编译内存</h3><ol>
+<li><p>在build.gradle文件中增加如下图所示代码</p>
+<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg" alt="5"></p>
 </li>
-<li><ol>
-<li>编译提速</li>
+<li><p>上诉的代码，表示开启Gradle的增量编译，增加编译的内存资源到4G。</p>
+</li>
 </ol>
+<h3 id="5-调用终端指令-1"><a href="#5-调用终端指令-1" class="headerlink" title="5.调用终端指令"></a>5.调用终端指令</h3><ol>
+<li><p>新建一个task，代码如下图所示</p>
+<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg" alt="6"></p>
 </li>
-<li><ol>
-<li>增加编译内存</li>
+<li><p>在上面的代码中，笔者想调用git log –pretty=oneline -l指令，即打印最近的一行git log信息，通过调用‘command’.execute([],project.rootDir).text即可返回数据，运行结果如下：</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg" alt="7"></p>
+</li>
 </ol>
+<h3 id="6-精简资源-1"><a href="#6-精简资源-1" class="headerlink" title="6.精简资源"></a>6.精简资源</h3><ol>
+<li><p>minifyEnabled指令，该指令用于对Android App 进行混淆，对代码进行优化、精简。同时配合shrinkRedpurces指令，还可以清除项目工程中无效的资源文件，从而进一步精简Apk文件。</p>
 </li>
-<li><ol>
-<li>调用终端指令</li>
+<li><p>启用minifyEnable指令和shrinkResources指令，代码如下图所示</p>
+<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg" alt="8"></p>
+</li>
+<li><p>另外，在Android Studio 中，IDE也提供了一个快捷指令来直接进行资源精简。使用快捷键“Shift+A”就可以调出快捷指令输入框。输入“remove unused resources”即可执行该指令，其效果与shrinkResources类似。</p>
+<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg" alt="11"> </p>
+</li>
 </ol>
+<h3 id="7-清除缓存-1"><a href="#7-清除缓存-1" class="headerlink" title="7.清除缓存"></a>7.清除缓存</h3><ol>
+<li><p>除了使用gradlew clean指令清理Gradle缓存以外，Gradle还提供了与一个指令来重新刷新全部的依赖库–gradlew –refresh-dependencies。通过这个指令，可以强制刷新所以来的库项目，从而获取新的版本库。如下图所示：</p>
+<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg" alt="9"></p>
 </li>
-<li><ol>
-<li>精简资源</li>
+<li><p>通过gradlew clean指令清理Gradle缓存，结果如下图</p>
+<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg" alt="10"></p>
+</li>
 </ol>
-</li>
-<li><ol>
-<li>清除缓存<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2></li>
-</ol>
-</li>
-<li>1、生成多个apk</li>
-<li>1）创建渠道占位符，在AndroidManifest文件的Application节点下，创建如下所示的meda-data节点：</li>
-</ul>
-<ul>
-<li>2）配置Gradlew脚本</li>
-</ul>
-<ul>
-<li><p>3）在终端执行gradlew build命令，在项目/app/build/outputs/apk下查看生成的渠道包，如下所示：</p>
-</li>
-<li><p>2、管理依赖库</p>
-</li>
-<li><p>1）Gradle依赖库缓存，利用其通知机制及依赖检查。利用Gradle提供的task可以很方便地解决依赖问题，其中gradlew androidDependencies的使用效果如下所示：</p>
-</li>
-<li><p>2）Gradle依赖统一管理，在根目录的build.gradle脚本中编写如下代码：</p>
-</li>
-<li><p>3）在全局Gradlew脚本中，指定了android和dependencies两个列表，并在其中配置了统一的参数和对应的值。</p>
-</li>
-</ul>
-<ul>
-<li>3、编译提速</li>
-<li><p>1）在gradlew.properties中添加如下代码，开启Gradle的多线程和多核心支持。</p>
-</li>
-<li><p>2）在build.gradlew中添加如下代码，用于开启Gradle的增量编译，增加编译的内存资源到4G。</p>
-</li>
-<li><p>4、增加编译内存<br>在gradlew.propertices文件中找到如下代码，在遇到编译时发生内存溢出问题时，可以修改其中的内存设置进行调整。如果要增大内存使用，只需反注释这两行代码，并修改内存大小即可。</p>
-</li>
-<li><p>5、调用终端指令<br>类似于java中的Runtime.exec()方法来获取终端指令数据，Gradle中通过如下代码实现调用终端指令。</p>
-</li>
-<li><p>6、精简资源</p>
-</li>
-<li><p>方法一：在build.gradle脚本中找到android方法中的buildTypes方法写入以下代码，minifyEnabled对代码进行优化、精简；shrinkResources用于清除项目工程中无效的资源文件，但必须依赖于minifyEnabled指令。</p>
-</li>
-<li><p>方法二：直接用快捷指令来进行资源精简。快捷键Ctrl+Shift+A，输入“remove unused resources”，与方法一效果一致。</p>
-</li>
-<li><p>7、清除缓存<br>通过Gradlew clean或者gradlew-refresh-dependencies指令来强制刷新所依赖的库项目，从而获得新的版本库。</p>
-<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2></li>
+<hr>
+<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><ul>
 <li>1.在开发过程中，按照课本做实验，基本掌握Gradle</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/10/实验四/" data-id="cj2izyz3w000368v4avjl05wm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/10/实验四/" data-id="cj2j04qlc00030wv4abtf3tnm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -329,7 +248,7 @@
       <ul>
         
           <li>
-            <a href="/2017/05/10/实验四/">实验四 Gradle使用</a>
+            <a href="/2017/05/10/实验四/">(no title)</a>
           </li>
         
           <li>
