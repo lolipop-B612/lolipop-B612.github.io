@@ -21,24 +21,7 @@ tags:实验四 Gradle 使用
 二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
 三、实验步骤和结果1.生成多个apk
 首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的">
-<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg">
-<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg">
-<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg">
-<meta property="og:updated_time" content="2017-05-10T13:17:33.588Z">
+<meta property="og:updated_time" content="2017-05-10T13:26:29.530Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实验四">
 <meta name="twitter:description" content="title: 实验四date: 2017-05-10 21:11:59
@@ -47,7 +30,6 @@ tags:实验四 Gradle 使用
 二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
 三、实验步骤和结果1.生成多个apk
 首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的">
-<meta name="twitter:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
   
     <link rel="alternate" href="/atom.xml" title="lolipoop blog" type="application/atom+xml">
   
@@ -124,88 +106,103 @@ tags:实验四 Gradle 使用
 <h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><h3 id="1-掌握Gradle的使用"><a href="#1-掌握Gradle的使用" class="headerlink" title="1.掌握Gradle的使用"></a>1.掌握Gradle的使用</h3><hr>
 <h2 id="二、试验任务"><a href="#二、试验任务" class="headerlink" title="二、试验任务"></a>二、试验任务</h2><h3 id="1-生成多个apk"><a href="#1-生成多个apk" class="headerlink" title="1.生成多个apk"></a>1.生成多个apk</h3><h3 id="2-管理依赖库"><a href="#2-管理依赖库" class="headerlink" title="2.管理依赖库"></a>2.管理依赖库</h3><h3 id="3-编译提速"><a href="#3-编译提速" class="headerlink" title="3.编译提速"></a>3.编译提速</h3><h3 id="4-增加编译内存"><a href="#4-增加编译内存" class="headerlink" title="4.增加编译内存"></a>4.增加编译内存</h3><h3 id="5-调用终端指令"><a href="#5-调用终端指令" class="headerlink" title="5.调用终端指令"></a>5.调用终端指令</h3><h3 id="6-精简资源"><a href="#6-精简资源" class="headerlink" title="6.精简资源"></a>6.精简资源</h3><h3 id="7-清除缓存"><a href="#7-清除缓存" class="headerlink" title="7.清除缓存"></a>7.清除缓存</h3><hr>
 <h2 id="三、实验步骤和结果"><a href="#三、实验步骤和结果" class="headerlink" title="三、实验步骤和结果"></a>三、实验步骤和结果</h2><h3 id="1-生成多个apk-1"><a href="#1-生成多个apk-1" class="headerlink" title="1.生成多个apk"></a>1.生成多个apk</h3><ol>
-<li><p>首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点</p>
-<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg" alt="1"></p>
-</li>
-<li><p>在项目的Gradle脚本的android领域中，添加productFlavors领域，并增加定义的渠道名。同时，使用manifestPlaceholders指定要替换渠道占位符的值，代码如下图</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg" alt="2"></p>
-</li>
-<li><p>在终端执行gradlew build命令开始创建，创建完成后，可在项目的/appild/outputs/apk中查看生成的渠道包，生成结果如下图所示：</p>
-<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg" alt="3"></p>
-</li>
+<li>首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点</li>
 </ol>
+<p>![此处输入图片的描述][1]</p>
+<ol>
+<li>在项目的Gradle脚本的android领域中，添加productFlavors领域，并增加定义的渠道名。同时，使用manifestPlaceholders指定要替换渠道占位符的值，代码如下图</li>
+</ol>
+<p>![此处输入图片的描述][2]</p>
+<ol>
+<li>在终端执行gradlew build命令开始创建，创建完成后，可在项目的/appild/outputs/apk中查看生成的渠道包，生成结果如下图所示：</li>
+</ol>
+<p>![此处输入图片的描述][3]</p>
 <h3 id="2-管理依赖库-1"><a href="#2-管理依赖库-1" class="headerlink" title="2.管理依赖库"></a>2.管理依赖库</h3><ol>
 <li><p>利用Gradle的通知机制</p>
 <p> 当项目依赖的库项目有更新之后，Gradle并不会立即通知主项目，但Gradle会给出一种通知机制，即利用Gradle的检查周期进行check，代码如下图</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg" alt="12"></p>
-<p> 这样就可以设置Gradle依赖的缓存时间。</p>
 </li>
-<li><p>同时Gradle还提供了在依赖传递中的强制刷新配置。例如，在一个简单的compile语句中，代码如下如所示</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg" alt="13"></p>
-<p> 如果增加一个属性transitive并让其值为true，则代表会强制刷新远程库，避免远程库更新后本地为刷新的问题。</p>
-</li>
+</ol>
+<p>![此处输入图片的描述][12]</p>
+<pre><code>这样就可以设置Gradle依赖的缓存时间。
+</code></pre><ol>
+<li>同时Gradle还提供了在依赖传递中的强制刷新配置。例如，在一个简单的compile语句中，代码如下如所示</li>
+</ol>
+<p>![此处输入图片的描述][13]</p>
+<pre><code>如果增加一个属性transitive并让其值为true，则代表会强制刷新远程库，避免远程库更新后本地为刷新的问题。
+</code></pre><ol>
 <li><p>利用Gradle的依赖检查</p>
 <p> 上面一种方式利用了Gradle的被动通知机制，但是这种方式始终需要开发者进行check，只能算是一种被动的通知机制。</p>
 <p> 实际上，利用gradle提供的task可以很方便地解决依赖问题，用到的gradle指令就是gradlew androidDependencies，使用后效果如下如所示</p>
-<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg" alt="14"></p>
 </li>
+</ol>
+<p>![此处输入图片的描述][14]</p>
+<ol>
 <li><p>Gradle依赖统一管理</p>
 <p> 利用Gradle全局变量实现这一管理，在根目录的build.gradle脚本中配置如下所示的代码。</p>
-<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg" alt="15"></p>
-<p> 在全局Gradle脚本中，制订了android和dependencies两个列表，并在其中配置了同意的参数和对应的值。这样每个module中，可以通过代码使用全局的依赖配置，代码如下</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg" alt="17"></p>
-<p> <img src="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg" alt="16"></p>
 </li>
 </ol>
+<p>![此处输入图片的描述][15]</p>
+<pre><code>在全局Gradle脚本中，制订了android和dependencies两个列表，并在其中配置了同意的参数和对应的值。这样每个module中，可以通过代码使用全局的依赖配置，代码如下
+</code></pre><p>![此处输入图片的描述][17]</p>
+<p>![此处输入图片的描述][16]</p>
 <h3 id="3-编译提速-1"><a href="#3-编译提速-1" class="headerlink" title="3.编译提速"></a>3.编译提速</h3><ol>
-<li><p>Gradle在编译时会执行大量的Task，同时生成很多中间文件。所以我们可以通过在gradle.properties文件中增加如下图代码</p>
-<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg" alt="4"></p>
-</li>
-<li><p>上诉代码表示开启Gradle的多线程和多核心支持，以此提高编译速度</p>
-</li>
+<li>Gradle在编译时会执行大量的Task，同时生成很多中间文件。所以我们可以通过在gradle.properties文件中增加如下图代码</li>
+</ol>
+<p>![此处输入图片的描述][4]</p>
+<ol>
+<li>上诉代码表示开启Gradle的多线程和多核心支持，以此提高编译速度</li>
 </ol>
 <h3 id="4-增加编译内存-1"><a href="#4-增加编译内存-1" class="headerlink" title="4.增加编译内存"></a>4.增加编译内存</h3><ol>
-<li><p>在build.gradle文件中增加如下图所示代码</p>
-<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg" alt="5"></p>
-</li>
-<li><p>上诉的代码，表示开启Gradle的增量编译，增加编译的内存资源到4G。</p>
-</li>
+<li>在build.gradle文件中增加如下图所示代码</li>
+</ol>
+<p>![此处输入图片的描述][5]</p>
+<ol>
+<li>上诉的代码，表示开启Gradle的增量编译，增加编译的内存资源到4G。</li>
 </ol>
 <h3 id="5-调用终端指令-1"><a href="#5-调用终端指令-1" class="headerlink" title="5.调用终端指令"></a>5.调用终端指令</h3><ol>
-<li><p>新建一个task，代码如下图所示</p>
-<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg" alt="6"></p>
-</li>
-<li><p>在上面的代码中，笔者想调用git log –pretty=oneline -l指令，即打印最近的一行git log信息，通过调用‘command’.execute([],project.rootDir).text即可返回数据，运行结果如下：</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg" alt="7"></p>
-</li>
+<li>新建一个task，代码如下图所示</li>
 </ol>
+<p>![此处输入图片的描述][6]</p>
+<ol>
+<li>在上面的代码中，笔者想调用git log –pretty=oneline -l指令，即打印最近的一行git log信息，通过调用‘command’.execute([],project.rootDir).text即可返回数据，运行结果如下：</li>
+</ol>
+<p>![此处输入图片的描述][7]</p>
 <h3 id="6-精简资源-1"><a href="#6-精简资源-1" class="headerlink" title="6.精简资源"></a>6.精简资源</h3><ol>
 <li><p>minifyEnabled指令，该指令用于对Android App 进行混淆，对代码进行优化、精简。同时配合shrinkRedpurces指令，还可以清除项目工程中无效的资源文件，从而进一步精简Apk文件。</p>
 </li>
 <li><p>启用minifyEnable指令和shrinkResources指令，代码如下图所示</p>
-<p> <img src="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg" alt="8"></p>
-</li>
-<li><p>另外，在Android Studio 中，IDE也提供了一个快捷指令来直接进行资源精简。使用快捷键“Shift+A”就可以调出快捷指令输入框。输入“remove unused resources”即可执行该指令，其效果与shrinkResources类似。</p>
-<p> <img src="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg" alt="11"> </p>
 </li>
 </ol>
+<p>![此处输入图片的描述][8]</p>
+<ol>
+<li>另外，在Android Studio 中，IDE也提供了一个快捷指令来直接进行资源精简。使用快捷键“Shift+A”就可以调出快捷指令输入框。输入“remove unused resources”即可执行该指令，其效果与shrinkResources类似。</li>
+</ol>
+<p>![此处输入图片的描述][11]</p>
 <h3 id="7-清除缓存-1"><a href="#7-清除缓存-1" class="headerlink" title="7.清除缓存"></a>7.清除缓存</h3><ol>
-<li><p>除了使用gradlew clean指令清理Gradle缓存以外，Gradle还提供了与一个指令来重新刷新全部的依赖库–gradlew –refresh-dependencies。通过这个指令，可以强制刷新所以来的库项目，从而获取新的版本库。如下图所示：</p>
-<p> <img src="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg" alt="9"></p>
-</li>
-<li><p>通过gradlew clean指令清理Gradle缓存，结果如下图</p>
-<p> <img src="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg" alt="10"></p>
-</li>
+<li>除了使用gradlew clean指令清理Gradle缓存以外，Gradle还提供了与一个指令来重新刷新全部的依赖库–gradlew –refresh-dependencies。通过这个指令，可以强制刷新所以来的库项目，从而获取新的版本库。如下图所示：</li>
 </ol>
+<p>![此处输入图片的描述][9]</p>
+<ol>
+<li>通过gradlew clean指令清理Gradle缓存，结果如下图</li>
+</ol>
+<p>![此处输入图片的描述][10]</p>
 <hr>
 <h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><ul>
-<li>1.在开发过程中，按照课本做实验，基本掌握Gradle</li>
+<li>1.在开发过程中，按照课本做实验，基本掌握Gradle<br><a href="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg" target="_blank" rel="external">1</a><br><a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg" target="_blank" rel="external">2</a><br><a href="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg" target="_blank" rel="external">3</a></li>
 </ul>
+<p><a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg" target="_blank" rel="external">12</a></p>
+<p><a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg" target="_blank" rel="external">13</a><br> <a href="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg" target="_blank" rel="external">14</a></p>
+<p> <a href="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg" target="_blank" rel="external">15</a><br> <a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg" target="_blank" rel="external">17</a><br> <a href="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg" target="_blank" rel="external">16</a><br><a href="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg" target="_blank" rel="external">4</a></p>
+<p><a href="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg" target="_blank" rel="external">5</a></p>
+<p><a href="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg" target="_blank" rel="external">6</a></p>
+<p> <a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg" target="_blank" rel="external">7</a><br> <a href="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg" target="_blank" rel="external">8</a></p>
+<p><a href="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg" target="_blank" rel="external">11</a> </p>
+<p><a href="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg" target="_blank" rel="external">9</a><br> <a href="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg" target="_blank" rel="external">10</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/10/实验四/" data-id="cj2j0fk8w000490v4m3t50i9v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/05/10/实验四/" data-id="cj2j0r1mq0004t4v4ki2m9hry" class="article-share-link">Share</a>
       
       
     </footer>
